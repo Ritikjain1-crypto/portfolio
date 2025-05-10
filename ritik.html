@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: rgb(17, 17, 17);
+        }
+        .name{
+         color: rgb(181, 121, 1);
+         font-size: 18PX;
+         position: absolute;
+         margin-left: 20PX;
+        }
+        .jai{
+            color: white;
+            position: absolute;
+            top: 8PX;
+            margin-left: 80PX;
+            font-size: 18PX;
+        }
+        .home{
+            color: white;
+            position: absolute;
+            top: 12PX;
+            margin-left: 450PX;
+            font-size: 15PX;
+        }
+        .home a{
+            text-decoration: none;
+            color: white;
+            height: 100%;
+            width: 100%;
+        }
+        .home a:hover{
+            text-decoration: none;
+            color: rgb(181, 121, 1);
+            height: 100%;
+            width: 100%;
+            transition: 0.50s;      
+         }
+        /* .home:hover{
+            color: rgb(181, 121, 1);
+            position: absolute;
+            top: 12PX;
+            margin-left: 450PX;
+            font-size: 15PX;
+            transition: 0.50s;
+        } */
+        .about{
+            color: white;
+            position: absolute;
+            top: 12PX;
+            margin-left: 550PX;
+            font-size: 15PX; 
+        }
+        .about a{
+            text-decoration: none;
+            color: white;
+            height: 100%;
+            width: 100%;
+        }
+        .about a:hover{
+            text-decoration: none;
+            color: rgb(181, 121, 1);
+            height: 100%;
+            width: 100%;
+            transition: 0.50s; 
+        }
+        /* .about:hover{
+            color: rgb(181, 121, 1);
+            position: absolute;
+            top: 12PX;
+            margin-left: 550PX;
+            font-size: 15PX; 
+            transition: 0.50s;
+        } */
+        .port{
+            color: rgb(181, 121, 1);
+            position: absolute;
+            top: 12PX;
+            margin-left: 680PX;
+            font-size: 30PX; 
+        }
+        .testi{
+            color: white;
+            position: absolute;
+            top: 12PX;
+            margin-left: 900PX;
+            font-size: 15PX;
+        }
+        .testi a{
+            text-decoration: none;
+            color: white;
+            height: 100%;
+            width: 100%;
+        }
+        .testi a:hover{
+            text-decoration: none;
+            color: rgb(181, 121, 1);
+            height: 100%;
+            width: 100%;
+            transition: 0.50s; 
+        }
+           /* .testi:hover{ 
+            color: rgb(181, 121, 1);
+            position: absolute;
+            top: 12PX;
+            margin-left: 900PX;
+            font-size: 15PX;
+            transition: 0.50s; 
+        } */
+        .contact{
+            color: white;
+            position: absolute;
+            top: 12PX;
+            margin-left: 1060PX;
+            font-size: 15PX;  
+        }
+        .contact a{
+            text-decoration: none;
+            color: white;
+            height: 100%;
+            width: 100%;
+        }
+        .contact a:hover{
+            text-decoration: none;
+            color: rgb(181, 121, 1);
+            height: 100%;
+            width: 100%;
+            transition: 0.50s; 
+        }
+        /* .contact:hover{
+            color: rgb(181, 121, 1);
+            position: absolute;
+            top: 12PX;
+            margin-left: 1060PX;
+            font-size: 15PX;  
+            transition: 0.50s;
+        } */
+        /* .connect{
+            border: 2px solid rgb(181, 121, 1);
+            background-color: rgb(181, 121, 1);
+            color: white;
+            position: absolute;
+            width: 110px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            top: 12px;
+            margin-left: 1350px;  
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .connect a{
+            text-decoration: none;
+            color: white;
+            background-color: rgb(181, 121, 1);
+        }
+        
+        .connect a:hover{
+            border: 2px solid rgb(181, 121, 1);
+            background-color: rgb(181, 121, 1);
+            color: white;
+            position: absolute;
+            width: 120px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            top: 12px;
+            margin-left: 1350px;  
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: 1s;
+        } */
+        .front{
+            color: rgb(181, 121, 1);
+            font-size: 50px;
+            position: absolute;
+            top: 100px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 500px;
+        }
+        .developer{
+            color: white;
+            font-size: 50px;
+            position: absolute;
+            top: 100px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 800px;
+        }
+        .solutions{
+            color: white;
+            position: absolute;
+            top: 175px;
+            margin-left: 550px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:small;
+        }
+        .view{
+            border: 2px solid rgb(181, 121, 1);
+            color: rgb(252, 168, 0);
+            width: 140px;
+            height: 25px;
+            position: absolute;
+            top: 230px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 600px;
+            border-radius: 7px;
+        }
+        .view:hover{
+            border: 2px solid rgb(181, 121, 1);
+            color: white;
+            background-color: rgb(181, 121, 1);
+            width: 140px;
+            height: 25px;
+            position: absolute;
+            top: 230px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 600px;
+            border-radius: 7px;
+            transition: 0.50s;
+        }
+        .lets{
+            border: 2px solid rgb(181, 121, 1);
+            color: rgb(252, 168, 0);
+            width: 140px;
+            height: 25px;
+            position: absolute;
+            top: 230px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 800px;
+            border-radius: 7px;
+        }
+        .lets:hover{
+            border: 2px solid rgb(181, 121, 1);
+            color: white;
+            background-color: rgb(181, 121, 1);
+            transition: 0.50s;
+            width: 140px;
+            height: 25px;
+            position: absolute;
+            top: 230px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 800px;
+            border-radius: 7px;
+        }
+        .About{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            position: absolute;
+            top: 450px;
+            margin-left: 150px;
+        }
+        .box{
+            border: 2px solid rgb(181, 121, 1);
+            position: absolute;
+            top: 480px;
+            width: 130px;
+            margin-left: 149px;
+            border-radius: 5px;
+        }
+        .hi{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            position: absolute;
+            top: 500px;
+            margin-left: 150px;
+        }
+        .RITIK{
+            color: rgb(180, 121, 1);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            position: absolute;
+            top: 500px;
+            margin-left: 220px;  
+        }
+        .jain{
+            color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            position: absolute;
+            top: 500px;
+            margin-left: 275px;  
+        }
+        .a{
+            color: white;
+            position: absolute;
+            top: 530px;
+            margin-left: 150px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+            line-height: 20px;
+        }
+        .CV{
+            border: 2px solid rgb(181, 121, 1);
+            color: rgb(252, 168, 0);
+            width: 140px;
+            height: 25px;
+            position: absolute;
+            top: 650px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 150px;
+            border-radius: 7px;
+        }
+        .CV:hover{
+            border: 2px solid rgb(181, 121, 1);
+            color: white;
+            background-color: rgb(181, 121, 1);
+            transition: 0.50s;
+            width: 140px;
+            height: 25px;
+            position: absolute;
+            top: 650px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 150px;
+            border-radius: 7px;
+        }
+        .image{
+            width: 300px;
+            height: 500px;
+            background: url(ritik.jpg) no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 350px;
+            margin-left: 1100px;
+            border-radius: 80px;
+         }
+        .ex{
+            color: white;
+            font-size: 27px;
+            position: absolute;
+            top: 920px;
+            margin-left: 150px;
+            font-family: Arial, Helvetica, sans-serif;
+         }
+         .main{
+            border: 2px solid rgb(181, 121, 1);
+            width: 330px;
+            height: px;
+            position: absolute;
+            top: 950px;
+            margin-left: 150px;
+         }
+         .bhadiya{
+            height: 400px;
+            width: 600px;
+            background: url(second.png) no-repeat;
+            position: absolute;
+            top: 1000px;
+            margin-left: 150px;
+         }
+         .free{
+            border: 1px solid rgb(181, 121, 1);
+            height: 150px;
+            width: 800px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 1050px;
+            margin-left: 600px;
+            line-height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+         .upper{
+            border: 2px solid rgb(181, 121, 1);
+            width: 1510px;
+            height: 1px;
+            background-color: rgb(181, 121, 1);
+            position: absolute;
+            top: 1300px;
+        }
+        .pro{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            position: absolute;
+            top: 1320px;
+            margin-left: 150px;
+        }
+        .ye{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            position: absolute;
+            top: 1320px;
+            margin-left: 515px; 
+        }
+        .satis{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            position: absolute;
+            top: 1320px;
+            margin-left: 900px;  
+        }
+        .know{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            position: absolute;
+            top: 1320px;
+            margin-left: 1300px;   
+        }
+        .ject{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            position: absolute;
+            top: 1380px;
+            margin-left: 110px;
+        }
+        .ars{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            position: absolute;
+            top: 1380px;
+            margin-left: 470px;
+        }
+        .faction{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            position: absolute;
+            top: 1380px;
+            margin-left: 850px;
+        }
+        .own{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            position: absolute;
+            top: 1380px;
+            margin-left: 1250px; 
+        }
+        .lower{
+            border: 2px solid rgb(181, 121, 1);
+            width: 1510px;
+            height: 1px;
+            background-color: rgb(181, 121, 1);
+            position: absolute;
+            top: 1420px;
+        }
+        /* .jar{
+            width: 300px;
+            height: 400px;
+            background: url(newmarvel.png) no-repeat;
+            padding: 50px;
+        } */
+        .deve{
+            border: 2px solid rgb(181, 121, 1) ;
+             color: white;
+            position: absolute;
+            top: 1500px;
+            margin-left: 150px;  
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 150px;
+            width: 800px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 25px;
+        }
+        .skills{
+            border: 2px solid rgb(181, 121, 1) ;
+            color: white;
+            position: absolute;
+            top :1800px;
+            margin-left: 550px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 180px;
+            width: 850px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 25px; 
+        }
+        l1{
+            display: block;
+            text-decoration: none;
+            width: 120px;
+            height: 30px;
+            position: absolute;
+            top: 7px;
+        }
+        .connect{
+            border: 2px solid rgb(181, 121, 1);
+            color: rgb(181, 121, 1);
+            width: 120px;
+            height: 30px;
+            position: absolute;
+            top: 12px;
+            margin-left: 1320px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+         }
+         .connect:hover{
+            border: 2px solid rgb(181, 121, 1);
+            color: white;
+            transition: 0.50s;
+            background-color: rgb(181, 121, 1);
+            width: 120px;
+            height: 30px;
+            position: absolute;
+            top: 12px;
+            margin-left: 1320px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+         }
+         .border{
+            border: 2px solid rgb(181, 121, 1);
+            width: 1510px;
+            height: 1px;
+            background-color: rgb(181, 121, 1);
+            position: absolute;
+            top: 2020px;
+         }
+         /* .html{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            position: absolute;
+            top: 2050px;
+            margin-left: 150px;
+         } */
+         .first{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            position: absolute;
+            top: 2050px;
+            margin-left: 100px;
+         }
+         .second{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            position: absolute;
+            top: 2050px;
+            margin-left: 400px;
+         }
+         .third{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            position: absolute;
+            top: 2050px;
+            margin-left: 720px;
+         }
+         .four{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            position: absolute;
+            top: 2050px;
+            margin-left: 950px;
+         }
+         .fifth{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            position: absolute;
+            top: 2050px;
+            margin-left: 1200px;
+         }
+         .no{
+            border: 2px solid rgb(181, 121, 1);
+            width: 1510px;
+            height: 1px;
+            background-color: rgb(181, 121, 1);
+            position: absolute;
+            top: 2120px;
+         }
+         .aalag{
+            border: 2px solid rgb(181, 121, 1);
+            width: 1510px;
+            height: 1px;
+            background-color: rgb(181, 121, 1);
+            position: absolute;
+            top: 2180px;
+         }
+         .ui{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            position: absolute;
+            top: 2210px;
+            margin-left: 100px;
+         }
+         .graphic{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            position: absolute;
+            top: 2210px;
+            margin-left: 530px;
+         }
+         .video{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            position: absolute;
+            top: 2210px;
+            margin-left: 1140px;
+         }
+         .one{
+            border: 2px solid rgb(181, 121, 1);
+            width: 1510px;
+            height: 1px;
+            background-color: rgb(181, 121, 1);
+            position: absolute;
+            top: 2270px;
+         }
+         .work{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            position: absolute;
+            top: 2400px;
+            margin-left: 150px;
+         }
+         .bo{
+            border: 2px solid rgb(181, 121, 1);
+            width: 640px;
+            position: absolute;
+            top: 2445px;
+            margin-left: 150px;
+            height: px;
+            background-color: rgb(181, 121, 1);
+         }
+         .web{
+            color: white;
+            border: 2px solid rgb(181, 121, 1);
+            width: 850px;
+            height: 180px;
+            position: absolute;
+            top: 2500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 550px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 25px;
+         }
+         /* border: 2px solid rgb(181, 121, 1) ;
+            color: white;
+            position: absolute;
+            top :1800px;
+            margin-left: 550px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 180px;
+            width: 850px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 25px;  */
+         .jarvis{
+            background: url(newmarvel.png)no-repeat;
+            width: 500px;
+            height: 500px;
+         }
+    </style>
+</head>
+<body>
+   <div class="name">
+   !RITIK</div> <div class="jai">JAIN
+   </div> 
+   <div class="home"><a href="">HOME</a></div>
+   <div class="about"><a href="">ABOUT US</a></div>
+   <div class="port">!PORTFOLIO/</div>
+   <div class="testi"><a href="">TESTIMONIALS</a></div>
+   <div class="contact"><a href="">CONTACT</a></div>
+   <!-- <div class="connect"><a href="">Let's Connect</a></div> -->
+   <a href="" id="l1"><div class="connect"> Let's Connect</div></a>
+   <div class="front">FRONTEND-</div>
+   <div class="developer">DEVELOPER</div>
+   <div class="solutions">A passionate developer decicated to crafting clean, efficient, and innovative solutions.</div>
+   <div class="view">View my Work</div>
+   <div class="lets">Let's Connect</div>
+   <div class="About">ABOUT ME</div>
+   <div class="box"></div>
+   <div class="hi">HI, I'm</div>
+   <div class="RITIK">RITIK</div>
+   <div class="jain">JAIN,</div>
+   <div class="a"> "I am a Frontend Developer and a passionate, versatile creative professional with expertise in Graphic <br> Design, UI/UX Design, and Video Editing. Alongside my design skills, I also have a strong foundation in <br> programming, with knowledge of Java and Python. I love blending creativity with technical skills to craft <br> engaging visual experiences, user-friendly interfaces, and efficient digital solutions. I am always eager to <br> learn, grow, and bring unique ideas to life." </div>
+   <div class="CV">Download  C V
+    <div class="button"></div>
+   </div>
+   <div class="image"></div>
+   <div class="ex">EXPERIENCE AND SKILLS</div>
+   <div class="main"></div>
+   <div class="bhadiya"></div>
+   <div class="free">As a dedicated freelance software developer, I specialize in crafting elegant and responsive front-end<br> solutions. With a strong foundation in HTML, CSS, and JavaScript, complemented by proficiency in Java and<br> Python, I bring both creativity and technical expertise to every project. I am passionate about transforming <br>ideas into seamless, user-centric digital experiences, with a commitment to quality, innovation, and lasting<br> impact.</div>
+   <div class="upper"></div>
+   <div class="pro">50+</div>
+   <div class="ye">1+</div>
+   <div class="satis">40+</div>
+   <div class="know">5+</div>
+   <div class="ject"> Project Completed</div>
+   <div class="ars"> Years Experience</div>
+   <div class="faction"> Satisfied Customers</div>
+   <div class="own"> Known Languages</div>
+   <div class="lower"></div>
+   <div class="jar"></div>
+   <div class="deve">I developed a personalized virtual assistant, "Jarvis," using Python, designed specifically for my computer. <br>Jarvis can perform a range of tasks including opening applications, retrieving information, and automating <br>routine actions, enhancing my daily workflow. Built with a focus on efficiency and smart command handling,<br> this project showcases my skills in Python programming, system integration, and the development of<br> intelligent, user-focused solutions.
+   </div>
+   <div class="Jarvis"></div>
+   <div class="html image"></div>
+   <div class="skills">I am a versatile creative and technical professional with expertise across multiple domains. My skill set <br>includes front-end web development using HTML, CSS, and JavaScript, along with strong programming<br> capabilities in Python and Java. In addition to my technical skills, I am also a passionate UI/UX designer,<br> graphic designer, and video editor, enabling me to craft visually stunning, user-centric digital experiences.<br>     This combination of design and development allows me to deliver complete, high-quality solutions that are <br>both functional and visually engaging.
+   </div>
+   <div class="border"></div>
+   <div class="first">HTML5</div>
+   <div class="second ">W3CSS</div>
+   <div class="third">JS</div>
+   <div class="four"> JAVA</div>
+   <div class="fifth">PYTHON</div>
+   <div class="no"></div>
+   <div class="aalag"></div>
+   <div class="ui">UI&UX</div>
+   <div class="graphic">GRAPHIC DESIGN</div>
+   <div class="video">VIDEO EDITOR</div>
+   <div class="one"></div>
+   <div class="work">WORK & PROJECT IN DESIGNING</div>
+   <div class="bo"></div>
+   <div class="web">"As a UI/UX Designer, I designed a premium consulting website with a primary focus on astrology <br>services, delivering a modern, user-centric experience tailored for clients seeking personalized guidance.<br> The design emphasizes clean layouts, intuitive navigation, and a sleek visual identity to reflect the <br> mystical yet professional nature of astrology. My goal was to balance aesthetics with functionality,<br>ensuring a seamless user journey across all devices. This project showcases my ability to craft high-end <br> digital experiences that align with niche brand values and user expectations."</div>
+</body>
+</html>
